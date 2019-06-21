@@ -129,9 +129,12 @@ def run(testpath):
     return (result, currentVal(result, profit))
 
 
-# print("Result for manual testcase:")
-# pairs, profit = run(None)
-# print("Profitability: " + str(profit))
-# for p in pairs:
-#     print("#" + str(p[0]+1) + " ship pick #" + str(p[1]+1) + " cargo")
-# print("")
+if __name__ == "__main__":
+    import sys
+    arg = sys.argv[1:]
+    print("Result for manual testcase:")
+    pairs, profit = run(arg[0])
+    print("Profitability: " + str(profit))
+    for p in pairs:
+        print("#" + str(p[0]+1) + " ship pick #" + str(p[1]+1) + " cargo")
+    print("")
