@@ -1,6 +1,6 @@
 ###### To run a specific testcase:
 ```bash
-python code.py "/path/to.testcase"
+python exec.py "/path/to/testcase.csv"
 ```
 
 ###### To run all testcases in testcases folder
